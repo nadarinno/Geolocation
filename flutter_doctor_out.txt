@@ -1,0 +1,60 @@
+[!] Flutter (Channel stable, 3.29.2, on Microsoft Windows [Version 10.0.26200.8037], locale en-US) [1,635ms]
+    • Flutter version 3.29.2 on channel stable at C:\Users\dell\flutter
+    ! Warning: `dart` on your path resolves to C:\Dart\dart-sdk\bin\dart.exe, which is not inside your current Flutter SDK checkout at C:\Users\dell\flutter. Consider adding C:\Users\dell\flutter\bin to the front of your path.
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision c236373904 (1 year, 1 month ago), 2025-03-13 16:17:06 -0400
+    • Engine revision 18b71d647a
+    • Dart version 3.7.2
+    • DevTools version 2.42.3
+    • If those were intentional, you can disregard the above warnings; however it is recommended to use "git" directly to perform update checks and upgrades.
+
+[√] Windows Version (11 Pro 64-bit, 25H2, 2009) [7.6s]
+
+[!] Android toolchain - develop for Android devices (Android SDK version 35.0.1) [8.6s]
+    • Android SDK at C:\Users\dell\AppData\Local\Android\sdk
+    • Platform android-35, build-tools 35.0.1
+    • Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.5+-12932927-b750.29)
+    ! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses
+
+[√] Chrome - develop for the web [381ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[√] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.7.2) [377ms]
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.7.34018.315
+    • Windows 10 SDK version 10.0.19041.0
+
+[√] Android Studio (version 2024.3) [119ms]
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+       https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+       https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 21.0.5+-12932927-b750.29)
+
+[√] IntelliJ IDEA Ultimate Edition (version 2024.2) [110ms]
+    • IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3
+    • Flutter plugin can be installed from:
+       https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+       https://plugins.jetbrains.com/plugin/6351-dart
+
+[√] VS Code (version unknown) [106ms]
+    • VS Code at C:\Users\dell\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.130.0
+    X Unable to determine VS Code version.
+
+[√] Connected device (4 available) [1,283ms]
+    • sdk gphone64 x86 64 (mobile) • emulator-5556 • android-x64    • Android 16 (API 36) (emulator)
+    • Windows (desktop)            • windows       • windows-x64    • Microsoft Windows [Version 10.0.26200.8037]
+    • Chrome (web)                 • chrome        • web-javascript • Google Chrome 146.0.7680.165
+    • Edge (web)                   • edge          • web-javascript • Microsoft Edge 146.0.3856.84
+    ! Device emulator-5554 is offline.
+
+[√] Network resources [897ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
