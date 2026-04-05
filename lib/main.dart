@@ -4,6 +4,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'firebase_options.dart';
 import 'screens/mapscreen.dart';
 import 'services/local_notification_service.dart';
+import 'services/notificationservice.dart';
 
 
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -25,6 +26,7 @@ void main() async {
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
   await LocalNotificationService.init();
+  await NotificationService().init();
 
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
     final notification = message.notification;

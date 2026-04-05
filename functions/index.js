@@ -1,38 +1,35 @@
 
-const functions = require("firebase-functions");
+const { onDocumentCreated } = require("firebase-functions/v2/firestore");
+const logger = require("firebase-functions/logger");
 const admin = require("firebase-admin");
 
 admin.initializeApp();
 
-exports.sendNotificationsForOldStores = functions.https.onRequest(async (req, res) => {
-  try {
-    const snapshot = await admin.firestore().collection("stores").get();
+exports.sendNewStoreNotification = onDocumentCreated(
+  "stores/{storeId}",
+  async (event) => {
+    try {
+      const data = event.data.data();
 
-    const messaging = admin.messaging();
+      logger.info("New store added:", event.params.storeId);
 
-    let count = 0;
-
-    for (const doc of snapshot.docs) {
-      const data = doc.data();
-
-      console.log("Processing store:", doc.id);
-
-      
-      const payload = {
+      const message = {
         notification: {
           title: data.name || "New Store",
           body: data.description || "Check this store",
         },
+        data: {
+          type: "new_store",
+          storeName: data.name || "New Store",
+        },
         topic: "stores",
       };
 
-      await messaging.send(payload);
-      count++;
-    }
+      const response = await admin.messaging().send(message);
 
-    res.send(`Done! Sent notifications for ${count} stores`);
-  } catch (error) {
-    console.error(error);
-    res.status(500).send(error.toString());
+      logger.info("Notification sent:", response);
+    } catch (error) {
+      logger.error("Error sending notification:", error);
+    }
   }
-});
+);

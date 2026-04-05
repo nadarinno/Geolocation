@@ -19,6 +19,5 @@ class NotificationService {
     String? token = await _messaging.getToken();
     print("FCM Token: $token");
 
-   
   }
 }
