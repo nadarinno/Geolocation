@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "geolocation-4f5fe",
+          "appId": "1:486331959690:android:f2a3371683d030cf95a073",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "geolocation-4f5fe",
+          "configurations": {
+            "android": "1:486331959690:android:f2a3371683d030cf95a073",
+            "ios": "1:486331959690:ios:732c2661e7053dba95a073",
+            "macos": "1:486331959690:ios:732c2661e7053dba95a073",
+            "web": "1:486331959690:web:b83c371c64d3acd495a073",
+            "windows": "1:486331959690:web:cadac72c970509bb95a073"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+       "predeploy": [
+       ]
+    }
+  ]
+}

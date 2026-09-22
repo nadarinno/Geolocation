@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486331959690",
+    "project_id": "geolocation-4f5fe",
+    "storage_bucket": "geolocation-4f5fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486331959690:android:f2a3371683d030cf95a073",
+        "android_client_info": {
+          "package_name": "com.example.geolocation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsTdae3D6sQQSaBcs-_5iXhcHqp15GjrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
